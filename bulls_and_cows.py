@@ -11,10 +11,10 @@ x_bull = 0
 y_bull = 0
 
 def random_number():
-    '''Формирование списка из 4-х элементов  от  1  до 9'''
-    unknown = set(str(randint(1, 9)))
+    '''Формирование списка из 4-х элементов  от  0  до 9'''
+    unknown = set(str(randint(0, 9)))
     while len(unknown) != 4:                                                                         
-        x = str(randint(1, 9))
+        x = str(randint(0, 9))
         unknown.add(x)
     unknown_list = [i for i in unknown]
     return(unknown_list)
@@ -25,7 +25,7 @@ def user_input_number():
     list_user_input = list(user_input)
     return list_user_input
 
-unknown_list = random_number()    # - список из 4-х случайных цифр от 1 до 9
+unknown_list = random_number()    # - список из 4-х случайных цифр от 0 до 9
 #print(unknown_list)
 while y_bull != 4:
     y_bull  = 0
